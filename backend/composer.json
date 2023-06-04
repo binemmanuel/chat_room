@@ -1,0 +1,19 @@
+{
+    "name": "chat_room/backend",
+    "type": "project",
+    "require": {
+        "workerman/phpsocket.io": "^1.1.16"
+    },
+    "autoload": {
+        "psr-4": {
+            "ChatRoom\\Backend\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Bin Emmanuel",
+            "email": "53215111+binemmanuel@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}

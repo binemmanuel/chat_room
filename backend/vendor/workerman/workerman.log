@@ -1,0 +1,41 @@
+2023-06-04 12:23:54 pid:57905 Workerman[server.php] start in USER mode
+2023-06-04 12:25:44 pid:57906 Worker[57906] process terminated with ERROR: E_COMPILE_ERROR "Declaration of PHPSocketIO\Engine\Protocols\WebSocket\RFC6455::input($buffer, Workerman\Connection\ConnectionInterface $connection) must be compatible with Workerman\Protocols\ProtocolInterface::input(string $buffer, Workerman\Connection\ConnectionInterface $connection): int|bool in /Users/binemmanuel/Projects/chat_room/backend/vendor/workerman/phpsocket.io/src/Engine/Protocols/WebSocket/RFC6455.php on line 45"
+2023-06-04 12:25:44 pid:57905 worker[PHPSocketIO:57906] exit with status 65280
+2023-06-04 12:28:49 pid:58328 Worker[58328] process terminated with ERROR: E_COMPILE_ERROR "Declaration of PHPSocketIO\Engine\Protocols\WebSocket\RFC6455::decode($buffer, Workerman\Connection\ConnectionInterface $connection) must be compatible with Workerman\Protocols\ProtocolInterface::decode(string $buffer, Workerman\Connection\ConnectionInterface $connection): mixed in /Users/binemmanuel/Projects/chat_room/backend/vendor/workerman/phpsocket.io/src/Engine/Protocols/WebSocket/RFC6455.php on line 224"
+2023-06-04 12:28:49 pid:57905 worker[PHPSocketIO:58328] exit with status 65280
+2023-06-04 12:28:57 pid:57905 Workerman[server.php] stopping ...
+2023-06-04 12:28:57 pid:57905 Workerman[server.php] has been stopped
+2023-06-04 12:29:00 pid:59115 Workerman[server.php] start in USER mode
+2023-06-04 12:29:04 pid:59116 Worker[59116] process terminated with ERROR: E_COMPILE_ERROR "Declaration of PHPSocketIO\Engine\Protocols\WebSocket\RFC6455::decode($buffer, Workerman\Connection\ConnectionInterface $connection) must be compatible with Workerman\Protocols\ProtocolInterface::decode(string $buffer, Workerman\Connection\ConnectionInterface $connection): mixed in /Users/binemmanuel/Projects/chat_room/backend/vendor/workerman/phpsocket.io/src/Engine/Protocols/WebSocket/RFC6455.php on line 224"
+2023-06-04 12:29:04 pid:59115 worker[PHPSocketIO:59116] exit with status 65280
+2023-06-04 12:30:33 pid:59115 Workerman[server.php] stopping ...
+2023-06-04 12:30:33 pid:59115 Workerman[server.php] has been stopped
+2023-06-04 12:30:36 pid:59473 Workerman[server.php] start in USER mode
+2023-06-04 12:30:41 pid:59474 Worker[59474] process terminated with ERROR: E_COMPILE_ERROR "Declaration of PHPSocketIO\Engine\Protocols\WebSocket\RFC6455::decode($buffer, Workerman\Connection\ConnectionInterface $connection) must be compatible with Workerman\Protocols\ProtocolInterface::decode(string $buffer, Workerman\Connection\ConnectionInterface $connection): mixed in /Users/binemmanuel/Projects/chat_room/backend/vendor/workerman/phpsocket.io/src/Engine/Protocols/WebSocket/RFC6455.php on line 216"
+2023-06-04 12:30:41 pid:59473 worker[PHPSocketIO:59474] exit with status 65280
+2023-06-04 12:31:14 pid:59473 Workerman[server.php] stopping ...
+2023-06-04 12:31:14 pid:59473 Workerman[server.php] has been stopped
+2023-06-04 12:31:17 pid:59664 Workerman[server.php] start in USER mode
+2023-06-04 13:20:30 pid:59664 Workerman[server.php] stopping ...
+2023-06-04 13:20:30 pid:59664 Workerman[server.php] has been stopped
+2023-06-04 13:20:42 pid:68139 Workerman[server.php] start in USER mode
+2023-06-04 18:18:09 pid:68140 TypeError: Workerman\Timer::del(): Argument #1 ($timerId) must be of type int, null given, called in /Users/binemmanuel/Projects/chat_room/backend/vendor/workerman/phpsocket.io/src/Engine/Socket.php on line 239 and defined in /Users/binemmanuel/Projects/chat_room/backend/vendor/workerman/workerman/src/Timer.php:221
+Stack trace:
+#0 /Users/binemmanuel/Projects/chat_room/backend/vendor/workerman/phpsocket.io/src/Engine/Socket.php(239): Workerman\Timer::del(NULL)
+#1 [internal function]: PHPSocketIO\Engine\Socket->onClose()
+#2 /Users/binemmanuel/Projects/chat_room/backend/vendor/workerman/phpsocket.io/src/Event/Emitter.php(93): call_user_func_array(Array, Array)
+#3 /Users/binemmanuel/Projects/chat_room/backend/vendor/workerman/phpsocket.io/src/Engine/Transport.php(68): PHPSocketIO\Event\Emitter->emit('close')
+#4 /Users/binemmanuel/Projects/chat_room/backend/vendor/workerman/workerman/src/Connection/TcpConnection.php(1006): PHPSocketIO\Engine\Transport->onClose(Object(Workerman\Connection\TcpConnection))
+#5 /Users/binemmanuel/Projects/chat_room/backend/vendor/workerman/workerman/src/Connection/TcpConnection.php(889): Workerman\Connection\TcpConnection->destroy()
+#6 /Users/binemmanuel/Projects/chat_room/backend/vendor/workerman/phpsocket.io/src/Engine/Transports/WebSocket.php(50): Workerman\Connection\TcpConnection->close()
+#7 /Users/binemmanuel/Projects/chat_room/backend/vendor/workerman/phpsocket.io/src/Engine/Transport.php(35): PHPSocketIO\Engine\Transports\WebSocket->doClose(Array)
+#8 /Users/binemmanuel/Projects/chat_room/backend/vendor/workerman/phpsocket.io/src/Engine/Socket.php(223): PHPSocketIO\Engine\Transport->close()
+#9 /Users/binemmanuel/Projects/chat_room/backend/vendor/workerman/workerman/src/Events/Select.php(339): PHPSocketIO\Engine\Socket->pingTimeoutCallback()
+#10 /Users/binemmanuel/Projects/chat_room/backend/vendor/workerman/workerman/src/Events/Select.php(391): Workerman\Events\Select->tick()
+#11 /Users/binemmanuel/Projects/chat_room/backend/vendor/workerman/workerman/src/Worker.php(1592): Workerman\Events\Select->run()
+#12 /Users/binemmanuel/Projects/chat_room/backend/vendor/workerman/workerman/src/Worker.php(1391): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#13 /Users/binemmanuel/Projects/chat_room/backend/vendor/workerman/workerman/src/Worker.php(1365): Workerman\Worker::forkWorkersForLinux()
+#14 /Users/binemmanuel/Projects/chat_room/backend/vendor/workerman/workerman/src/Worker.php(572): Workerman\Worker::forkWorkers()
+#15 /Users/binemmanuel/Projects/chat_room/backend/src/server.php(15): Workerman\Worker::runAll()
+#16 {main}
+2023-06-04 18:18:10 pid:68139 worker[PHPSocketIO:68140] exit with status 64000
